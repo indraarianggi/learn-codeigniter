@@ -2,7 +2,9 @@
 
 /**
 * Model 1 : Hello World!
+*			Hello World! dengan Menggunakan Helper
 */
+
 class Hello_model extends CI_Model
 {
 	
