@@ -1,7 +1,7 @@
 <?php
 
 /**
-* Controller 6 : Fungsi _remap()
+* Controller 7 : Fungsi _remap()
 *					=>	memungkinkan Ci melakukan pemetaan suatu fungsi
 *						dengan fungsi yang lain dalam satu controller.
 *					=>	melakukan pengarahan suatu fungsi untuk dapat

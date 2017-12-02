@@ -1,7 +1,7 @@
 <?php
 
 /**
-* Controller 5 : Fungsi Redirect
+* Controller 6 : Fungsi Redirect
 *					=>	digunakan untuk mengalihkan proses 
 *						dari satu controler ke controler lain
 */
