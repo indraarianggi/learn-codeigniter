@@ -5,3 +5,4 @@ Dalam proyek ini termasuk:
 - Helper
 - URI dan Segmentasi
 - Fungsi redirect dan _remap()
+- Membuat form dengan bantuan helper
