@@ -6,3 +6,4 @@ Dalam proyek ini termasuk:
 - URI dan Segmentasi
 - Fungsi redirect dan _remap()
 - Membuat form dengan bantuan helper
+- Input dan Pemfilteran

@@ -2,6 +2,7 @@
 
 /**
 * Model 2 : Form dalam CodeIgniter
+*			Input dan Pemfilteran dalam CI
 */
 
 class Form_model extends CI_Model
