@@ -141,6 +141,22 @@ class Form_model extends CI_Model
 
 		return $form;
 	}
+
+	function cekuser($username, $userpass)
+	{
+		$errmessage;
+		if (!(empty($username) && empty($userpass))) {
+			if (($username=="admin") && ($userpass=="nimda")) {
+				$errmessage = "Sukses!";
+			} else {
+				$errmessage = "Gagal Login ! Username atau Userpass tidak sesuai !";
+			}
+		} else {
+			$errmessage = "firsttime";
+		}
+
+		return $errmessage;
+	}
 }
 
 ?>

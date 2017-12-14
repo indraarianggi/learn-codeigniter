@@ -40,6 +40,24 @@ class Login extends CI_Controller
 
 		$this->load->view("form/login_showform_result", $data);
 	}
+
+	function newform() {
+		$this->load->helper('url');
+		$this->load->model('Form_model');
+
+		$data = $this->Form_model->formuser();
+
+		$data["errmessage"] = $this->Form_model->cekuser($data["username"]["value"], 
+			$data["userpass"]["value"]);
+
+		if ($data["errmessage"]=="Sukses!") {
+			redirect("Hello/hello");
+		} else {
+			$data["aksi"] = "Login/newform";
+			$data["judul"] = "Login To Get The Application";
+			$this->load->view("form/formlogin_message", $data);
+		}
+	}
 }
 
 ?>

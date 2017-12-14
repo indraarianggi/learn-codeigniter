@@ -7,3 +7,4 @@ Dalam proyek ini termasuk:
 - Fungsi redirect dan _remap()
 - Membuat form dengan bantuan helper
 - Input dan Pemfilteran
+- Pemfilteran XSS

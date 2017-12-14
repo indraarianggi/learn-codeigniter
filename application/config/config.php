@@ -432,6 +432,8 @@ $config['standardize_newlines'] = FALSE;
 |          for backwards compatibility purposes!
 |
 */
+
+//  beri nilai TRUE untuk mengaktifkan fungsi pemfilteran XSS secara otomatis
 $config['global_xss_filtering'] = FALSE;
 
 /*
