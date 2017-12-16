@@ -8,3 +8,4 @@ Dalam proyek ini termasuk:
 - Membuat form dengan bantuan helper
 - Input dan Pemfilteran
 - Pemfilteran XSS
+- Validasi Form
