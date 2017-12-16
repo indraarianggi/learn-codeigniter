@@ -49,6 +49,30 @@ class Userreg extends CI_Controller
 			$this->load->view("validasi/userreg_sukses", $data);
 		}
 	}
+
+	function newrule()
+	{
+		// Fungsi untuk menerapkan/mempraktekkan RULE VALIDASI baru yang dibuat sendiri
+		$this->load->library('form_validation');
+		$this->load->model('validasi/Userreg_model');
+
+		$data = $this->Userreg_model->userdef();
+
+		//================ PROSES VALIDASI FORM ================
+		$userrules = $this->Userreg_model->userruleext();
+		$this->form_validation->set_rules($userrules);
+
+		$data["aksi"] = "validasi/Userreg/newrule";
+
+		if($this->form_validation->run() == FALSE) {
+			$data["judul"]= "Registrasi Pengguna Dengan Penambahan Rule Baru";
+			$this->load->view("validasi/userreg_form", $data);
+		}
+		else {
+			$data["judul"]= "Registrasi Berhasil Dilakukan";
+			$this->load->view("validasi/userreg_sukses", $data);
+		}
+	}
 }
 
 ?>

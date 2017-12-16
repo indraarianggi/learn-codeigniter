@@ -83,6 +83,34 @@ class Userreg_model extends CI_Model
 		return $rules;
 	}
 
+	function userruleext()
+	{
+		$rules = array(
+				array(
+						"field"	=> 'username',
+						"label"	=> 'Nama User',
+						"rules"	=> 'required|trim|min_length[5]|max_length[15]|valid_username'
+					),
+				array(
+						"field"	=> 'userpass',
+						"label"	=> 'Password',
+						"rules"	=> 'required|trim'
+					),
+				array(
+						"field"	=> 'konfpass',
+						"label"	=> 'Konfirmasi Password',
+						"rules"	=> 'required|trim|matches[userpass]'
+					),
+				array(
+						"field"	=> 'useremail',
+						"label"	=> 'Email',
+						"rules"	=> 'required|trim|valid_email'
+					),
+			);
+
+		return $rules;
+	}
+
 }
 
 ?>
