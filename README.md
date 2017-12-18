@@ -10,3 +10,4 @@ Dalam proyek ini termasuk:
 - Pemfilteran XSS
 - Validasi Form (dan menambahkan Rule Validasi buatan sendiri)
 - Menggunakan Library Calendar
+- Menggunakan Library Table HTML
