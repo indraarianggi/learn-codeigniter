@@ -11,3 +11,4 @@ Dalam proyek ini termasuk:
 - Validasi Form (dan menambahkan Rule Validasi buatan sendiri)
 - Menggunakan Library Calendar
 - Menggunakan Library Table HTML
+- CRUD (Create, Read, Update, Delete) dengan Fungsi Query
