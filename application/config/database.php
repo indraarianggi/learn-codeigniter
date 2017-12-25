@@ -70,8 +70,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
+
+
+// PERHATIKAN
+/*
+	Untuk mengaktifkan konfigurasi database yang digunakan, jika ada lebih dari 1 konfigurasi database
+*/
 $active_group = 'default';
+
+/*
+	Untuk mangaktifkan/menonaktifkan active record ci
+*/
 $query_builder = TRUE;
+
 
 $db['default'] = array(
 	'dsn'	=> '',
@@ -94,3 +105,43 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
+/*
+	Contoh jika ada 2 (lebih dari 1) database yang digunakan
+*/
+/*
+
+$db['kedua'] = array( // => key array berbeda dari sebelumnya (kedua).
+	'dsn'	=> '',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'cdcol',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE, // => harus FALSE, jika TRUE akan error.
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+
+
+Untuk mengaktifkan konfigurasi database 'kedua' ini,
+pada file kontroler gunakan sintaks berikut:
+
+	$this->load->database('kedua', TRUE);
+
+Atau . . . (konfigurasi 'default' juga diaktifkan, jika tidak menggunakan autoload)
+
+	$this->load->database('default', TRUE);
+	$this->load->database('kedua', TRUE);
+
+*/

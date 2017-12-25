@@ -12,3 +12,5 @@ Dalam proyek ini termasuk:
 - Menggunakan Library Calendar
 - Menggunakan Library Table HTML
 - CRUD (Create, Read, Update, Delete) dengan Fungsi Query
+- CRUD dengan Active Record
+- CATATAN: Konfigurasi database
