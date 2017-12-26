@@ -14,3 +14,4 @@ Dalam proyek ini termasuk:
 - CRUD (Create, Read, Update, Delete) dengan Fungsi Query
 - CRUD dengan Active Record
 - CATATAN: Konfigurasi database
+- PHPExcel
