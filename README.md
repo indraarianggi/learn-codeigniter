@@ -15,3 +15,4 @@ Dalam proyek ini termasuk:
 - CRUD dengan Active Record
 - CATATAN: Konfigurasi database
 - PHPExcel
+- Upload dan Download File
