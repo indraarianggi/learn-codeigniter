@@ -17,3 +17,5 @@ Dalam proyek ini termasuk:
 - PHPExcel
 - Upload dan Download File
 - Session
+- AJAX
+- Cetak file PDF
